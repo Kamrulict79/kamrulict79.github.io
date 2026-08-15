@@ -5,182 +5,188 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Md. Kamrul Islam — IT Officer, Sonali Bank PLC</title>
 <style>
-  :root{
-    --navy-900:#0b2136;
-    --navy-800:#0f2942;
-    --navy-700:#173a5c;
-    --teal:#0d9488;
-    --teal-dark:#0b7c72;
-    --amber:#c98a2c;
-    --bg:#f6f8f9;
-    --card:#ffffff;
-    --line:#c3cfd6;
-    --text-0:#152230;
-    --text-1:#3d4b58;
-    --text-2:#6b7a89;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
+    *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
-    background:var(--bg);
-    color:var(--text-1);
+    background:#f6f8f9;
+    color:#3d4b58;
     font-family:-apple-system,'Segoe UI',Roboto,'Source Sans 3',Arial,sans-serif;
     line-height:1.65;
   }
-  h1,h2,h3,h4{font-family:Georgia,'Times New Roman',serif;color:var(--text-0);}
+  h1,h2,h3,h4{font-family:Georgia,'Times New Roman',serif;color:#152230;}
   a{color:inherit;text-decoration:none;}
   .container{max-width:1080px;margin:0 auto;padding:0 24px;}
-  section{padding:88px 0;border-top:1px solid var(--line);}
+  section{padding:88px 0;border-top:1px solid #c3cfd6;}
   .hero{border-top:none;}
   img{max-width:100%;display:block;}
 
   /* Navbar */
   .navbar{
     position:sticky;top:0;z-index:100;
-    background:rgba(246,248,249,0.92);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
+    background:#f6f8f9;
+    border-bottom:1px solid #c3cfd6;
   }
   .navbar .container{display:flex;align-items:center;justify-content:space-between;height:76px;}
-  .brand{display:flex;align-items:center;gap:12px;font-family:'Lora',serif;font-weight:600;color:var(--navy-800);font-size:19px;}
+  .brand{display:flex;align-items:center;font-family:'Lora',serif;font-weight:600;color:#0f2942;font-size:19px;}
+  .brand .mono{margin-right:12px;}
+  .brand-logo{width:40px;height:40px;border-radius:8px;object-fit:cover;margin-right:12px;}
   .brand .mono{
-    width:38px;height:38px;border-radius:8px;background:var(--navy-800);
+    width:38px;height:38px;border-radius:8px;background:#0f2942;
     color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;
   }
-  .nav-links{display:flex;gap:34px;list-style:none;}
-  .nav-links a{font-size:14.5px;color:var(--text-1);font-weight:500;transition:color .2s;padding-bottom:4px;border-bottom:2px solid transparent;}
-  .nav-links a:hover{color:var(--teal-dark);border-bottom-color:var(--teal);}
-  .nav-toggle{display:none;background:none;border:none;color:var(--navy-800);font-size:24px;cursor:pointer;}
+  .nav-links{display:flex;list-style:none;}
+  .nav-links li{margin-left:34px;}
+  .nav-links li:first-child{margin-left:0;}
+  .nav-links a{font-size:14.5px;color:#3d4b58;font-weight:500;transition:color .2s;padding-bottom:4px;border-bottom:2px solid transparent;}
+  .nav-links a:hover{color:#0b7c72;border-bottom-color:#0d9488;}
+  .nav-toggle{display:none;background:none;border:none;color:#0f2942;font-size:24px;cursor:pointer;}
 
   /* Hero */
-  .hero{padding-top:76px;background:var(--card);border-bottom:1px solid var(--line);}
+  .hero{padding-top:76px;background:#ffffff;border-bottom:1px solid #c3cfd6;}
   .hero-inner{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;padding:76px 0;}
   .hero-photo{
     width:168px;height:168px;border-radius:50%;overflow:hidden;
-    border:4px solid var(--card);box-shadow:0 0 0 2px var(--teal),0 25px 45px -20px rgba(15,41,66,0.35);
+    border:4px solid #ffffff;box-shadow:0 0 0 2px #0d9488,0 25px 45px -20px rgba(15,41,66,0.35);
   }
   .hero-photo img{width:100%;height:100%;object-fit:cover;}
   .eyebrow{
     display:inline-flex;align-items:center;gap:8px;
     font-size:12px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;
-    color:var(--teal-dark);margin-bottom:14px;
+    color:#0b7c72;margin-bottom:14px;
   }
-  .eyebrow::before{content:"";width:22px;height:2px;background:var(--teal);}
   .hero h1{font-size:38px;font-weight:700;line-height:1.2;margin-bottom:6px;}
-  .hero .role{font-size:17px;color:var(--teal-dark);font-weight:600;margin-bottom:12px;}
-  .hero .org{font-size:14.5px;color:var(--text-2);margin-bottom:22px;}
-  .btn-row{display:flex;gap:14px;margin-bottom:22px;flex-wrap:wrap;}
+  .hero .role{font-size:17px;color:#0b7c72;font-weight:600;margin-bottom:12px;}
+  .hero .org{font-size:14.5px;color:#6b7a89;margin-bottom:22px;}
+  .btn-row{display:flex;margin-bottom:22px;flex-wrap:wrap;}
+  .btn-row > *{margin-right:14px;margin-bottom:10px;}
   .btn{
     padding:12px 24px;border-radius:6px;font-size:14.5px;font-weight:600;
-    display:inline-flex;align-items:center;gap:8px;transition:.2s;cursor:pointer;border:1.5px solid transparent;
+    display:inline-flex;align-items:center;transition:.2s;cursor:pointer;border:1.5px solid transparent;
   }
-  .btn-primary{background:var(--navy-800);color:#fff;}
-  .btn-primary:hover{background:var(--teal-dark);transform:translateY(-2px);}
-  .btn-outline{border-color:var(--line);color:var(--navy-800);background:var(--card);}
-  .btn-outline:hover{border-color:var(--teal);color:var(--teal-dark);}
-  .socials{display:flex;gap:12px;}
+  .btn-primary{background:#0f2942;color:#fff;}
+  .btn-primary:hover{background:#0b7c72;transform:translateY(-2px);}
+  .btn-outline{border-color:#c3cfd6;color:#0f2942;background:#ffffff;}
+  .btn-outline:hover{border-color:#0d9488;color:#0b7c72;}
+  .socials{display:flex;}
   .socials a{
-    width:36px;height:36px;border-radius:50%;border:1.5px solid var(--line);
-    display:flex;align-items:center;justify-content:center;color:var(--text-1);transition:.2s;
+    width:36px;height:36px;border-radius:50%;border:1.5px solid #c3cfd6;
+    display:flex;align-items:center;justify-content:center;color:#3d4b58;transition:.2s;
+    margin-right:12px;
   }
-  .socials a:hover{border-color:var(--teal);color:var(--teal-dark);}
+  .socials a:hover{border-color:#0d9488;color:#0b7c72;}
 
   /* Section headings */
   .section-head{margin-bottom:44px;}
-  .section-eyebrow{font-size:12px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;color:var(--teal-dark);margin-bottom:12px;display:flex;align-items:center;gap:8px;}
-  .section-eyebrow::before{content:"";width:22px;height:2px;background:var(--teal);}
+  .section-eyebrow{font-size:12px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;color:#0b7c72;margin-bottom:12px;display:flex;align-items:center;}
+  .section-eyebrow::before{content:"";width:22px;height:2px;background:#0d9488;margin-right:8px;}
   .section-head h2{font-size:28px;font-weight:700;margin-top:2px;}
 
   .card{
-    background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:26px;
+    background:#ffffff;border:1.5px solid #c3cfd6;border-radius:10px;padding:26px;
     transition:.2s;
   }
-  .card:hover{border-color:var(--teal);box-shadow:0 18px 34px -26px rgba(15,41,66,.4);}
+  .card:hover{border-color:#0d9488;box-shadow:0 18px 34px -26px rgba(15,41,66,.4);}
 
   /* About */
-  .about{background:var(--bg);}
+  .about{background:#f6f8f9;}
   .about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:start;}
-  .about-text p{color:var(--text-1);margin-bottom:15px;}
+  .about-text p{color:#3d4b58;margin-bottom:15px;}
   .stat-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
-  .stat-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 14px;text-align:center;}
-  .stat-card .num{font-family:'Lora',serif;font-size:24px;font-weight:700;color:var(--teal-dark);margin-bottom:4px;}
-  .stat-card .lbl{font-size:12px;color:var(--text-2);}
+  .stat-card{background:#ffffff;border:1px solid #c3cfd6;border-radius:10px;padding:20px 14px;text-align:center;}
+  .stat-card .num{font-family:'Lora',serif;font-size:24px;font-weight:700;color:#0b7c72;margin-bottom:4px;}
+  .stat-card .lbl{font-size:12px;color:#6b7a89;}
 
   /* Education */
   .edu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
-  .edu-card .degree-row{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;gap:10px;}
+  .edu-card .degree-row{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;}
   .edu-card h3{font-size:16.5px;}
-  .result-pill{background:var(--navy-800);color:#fff;font-size:11.5px;font-weight:600;padding:5px 12px;border-radius:999px;white-space:nowrap;}
-  .edu-card .inst{color:var(--text-1);font-size:14px;margin-bottom:3px;}
-  .edu-card .year{color:var(--text-2);font-size:12.5px;}
+  .result-pill{background:#0f2942;color:#fff;font-size:11.5px;font-weight:600;padding:5px 12px;border-radius:999px;white-space:nowrap;}
+  .edu-card .inst{color:#3d4b58;font-size:14px;margin-bottom:3px;}
+  .edu-card .year{color:#6b7a89;font-size:12.5px;}
 
   /* Skills */
   .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
-  .skill-card h3{font-size:15.5px;color:var(--navy-800);margin-bottom:10px;display:flex;align-items:center;gap:10px;}
-  .skill-card h3 .ic{width:30px;height:30px;border-radius:7px;background:var(--navy-800);color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-  .skill-card p{font-size:13.5px;color:var(--text-2);}
+  .skill-card h3{font-size:15.5px;color:#0f2942;margin-bottom:10px;display:flex;align-items:center;}
+  .skill-card h3 .ic{width:30px;height:30px;border-radius:7px;background:#0f2942;color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-right:10px;}
+  .skill-card p{font-size:13.5px;color:#6b7a89;}
 
   /* Project */
   .project-card{max-width:760px;margin:0 auto;}
-  .project-card h3{font-size:18px;margin-bottom:10px;color:var(--navy-800);}
-  .project-card p{color:var(--text-1);font-size:14.5px;}
-  .tag-row{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;}
-  .tag{background:var(--bg);border:1px solid var(--line);font-size:12px;color:var(--text-2);padding:5px 12px;border-radius:999px;}
+  .project-card h3{font-size:18px;margin-bottom:10px;color:#0f2942;}
+  .project-card p{color:#3d4b58;font-size:14.5px;}
+  .tag-row{display:flex;margin-top:16px;flex-wrap:wrap;}
+  .tag-row > *{margin-right:8px;margin-bottom:8px;}
+  .tag{background:#f6f8f9;border:1px solid #c3cfd6;font-size:12px;color:#6b7a89;padding:5px 12px;border-radius:999px;}
 
   /* Experience timeline */
   .timeline{position:relative;max-width:720px;margin:0 auto;}
-  .timeline::before{content:"";position:absolute;left:20px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--teal),var(--line));}
+  .timeline::before{content:"";position:absolute;left:20px;top:8px;bottom:8px;width:2px;background:linear-gradient(#0d9488,#c3cfd6);}
   .tl-item{position:relative;padding-left:60px;margin-bottom:36px;}
   .tl-item:last-child{margin-bottom:0;}
-  .tl-dot{position:absolute;left:11px;top:4px;width:20px;height:20px;border-radius:50%;background:var(--card);border:2px solid var(--teal);display:flex;align-items:center;justify-content:center;}
-  .tl-dot::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal);}
+  .tl-dot{position:absolute;left:11px;top:4px;width:20px;height:20px;border-radius:50%;background:#ffffff;border:2px solid #0d9488;display:flex;align-items:center;justify-content:center;}
+  .tl-dot::after{content:"";width:8px;height:8px;border-radius:50%;background:#0d9488;}
   .tl-item h3{font-size:17px;margin-bottom:3px;}
-  .tl-item .org{color:var(--teal-dark);font-size:14px;font-weight:600;margin-bottom:5px;}
-  .tl-item .period{color:var(--text-2);font-size:12.5px;margin-bottom:8px;}
-  .tl-item p.desc{color:var(--text-1);font-size:14px;}
+  .tl-item .org{color:#0b7c72;font-size:14px;font-weight:600;margin-bottom:5px;}
+  .tl-item .period{color:#6b7a89;font-size:12.5px;margin-bottom:8px;}
+  .tl-item p.desc{color:#3d4b58;font-size:14px;}
 
   /* Languages */
-  .lang-row{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
-  .lang-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 30px;text-align:center;min-width:180px;}
-  .lang-card .lname{font-family:'Lora',serif;font-weight:600;color:var(--navy-800);font-size:16px;margin-bottom:4px;}
-  .lang-card .lvl{font-size:12.5px;color:var(--teal-dark);font-weight:600;}
+  .lang-row{display:flex;justify-content:center;flex-wrap:wrap;}
+  .lang-row > *{margin:0 9px 12px 9px;}
+  .lang-card{background:#ffffff;border:1px solid #c3cfd6;border-radius:10px;padding:18px 30px;text-align:center;min-width:180px;}
+  .lang-card .lname{font-family:'Lora',serif;font-weight:600;color:#0f2942;font-size:16px;margin-bottom:4px;}
+  .lang-card .lvl{font-size:12.5px;color:#0b7c72;font-weight:600;}
+
+  /* Photos */
+  .photos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .photo-placeholder{
+    height:160px;border:1.5px dashed #c3cfd6;border-radius:10px;
+    display:flex;align-items:center;justify-content:center;color:#6b7a89;
+    font-size:13px;background:#f6f8f9;
+  }
+  .photo-item{height:160px;border-radius:10px;overflow:hidden;border:1.5px solid #c3cfd6;}
+  .photo-item img{width:100%;height:100%;object-fit:cover;}
 
   /* Contact */
-  .contact{background:var(--bg);border-top:3px solid var(--navy-800);}
-  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;}
-  .contact-info-list{display:flex;flex-direction:column;gap:18px;margin-bottom:26px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px;}
-  .contact-info-item{display:flex;align-items:center;gap:14px;}
-  .contact-info-item .icon{width:40px;height:40px;border-radius:8px;background:var(--bg);border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--teal-dark);flex-shrink:0;}
-  .contact-info-item .lbl{font-size:11.5px;color:var(--text-2);}
-  .contact-info-item .val{font-size:14.5px;color:var(--text-0);font-weight:500;}
-  .map-card{background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
-  .map-card .val{font-size:13.5px;color:var(--text-0);margin-bottom:2px;font-weight:500;}
-  .map-card .lbl{font-size:11.5px;color:var(--text-2);}
-  .map-card a{color:var(--teal-dark);font-size:12.5px;font-weight:600;white-space:nowrap;}
+  .contact{background:#f6f8f9;}
+  .contact-info-list{display:flex;flex-direction:column;margin-bottom:26px;background:#ffffff;border:1px solid #c3cfd6;border-radius:10px;padding:22px;}
+  .contact-info-list > *{margin-bottom:18px;}
+  .contact-info-list > *:last-child{margin-bottom:0;}
+  .contact-info-item{display:flex;align-items:center;}
+  .contact-info-item .icon{width:40px;height:40px;border-radius:8px;background:#f6f8f9;border:1.5px solid #c3cfd6;display:flex;align-items:center;justify-content:center;color:#0b7c72;flex-shrink:0;margin-right:14px;}
+  .contact-info-item .lbl{font-size:11.5px;color:#6b7a89;}
+  .contact-info-item .val{font-size:14.5px;color:#152230;font-weight:500;}
+  .map-card{background:#ffffff;border:1.5px solid #c3cfd6;border-radius:10px;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+  .map-card .val{font-size:13.5px;color:#152230;margin-bottom:2px;font-weight:500;}
+  .map-card .lbl{font-size:11.5px;color:#6b7a89;}
+  .map-card a{color:#0b7c72;font-size:12.5px;font-weight:600;white-space:nowrap;}
 
-  .contact-form-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px;}
+  .contact-form-card{background:#ffffff;border:1px solid #c3cfd6;border-radius:10px;padding:24px;max-width:560px;margin:0 auto;}
   .form-group{margin-bottom:16px;}
-  .form-group label{display:block;font-size:12.5px;color:var(--text-2);margin-bottom:6px;font-weight:500;}
+  .form-group label{display:block;font-size:12.5px;color:#6b7a89;margin-bottom:6px;font-weight:500;}
   .form-group input,.form-group textarea{
-    width:100%;background:#ffffff;border:1.5px solid var(--navy-700);border-radius:7px;
-    padding:12px 14px;color:var(--text-0);font-family:inherit;font-size:14px;transition:.2s;
+    width:100%;background:#ffffff;border:1.5px solid #173a5c;border-radius:7px;
+    padding:12px 14px;color:#152230;font-family:inherit;font-size:14px;transition:.2s;
   }
-  .form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,148,136,0.15);}
+  .form-group input:focus,.form-group textarea:focus{outline:none;border-color:#0d9488;box-shadow:0 0 0 3px rgba(13,148,136,0.15);}
   .form-group textarea{resize:vertical;min-height:100px;}
   #form-status{margin-top:12px;font-size:13.5px;}
-  #form-status.success{color:var(--teal-dark);}
+  #form-status.success{color:#0b7c72;}
   #form-status.error{color:#c0392b;}
 
-  footer{padding:28px 0;text-align:center;color:var(--text-2);font-size:13px;border-top:1px solid var(--line);background:var(--card);}
+  footer{padding:28px 0;text-align:center;color:#6b7a89;font-size:13px;border-top:1px solid #c3cfd6;background:#ffffff;}
 
   @media (max-width:860px){
-    .nav-links{position:fixed;top:76px;left:0;right:0;background:var(--card);border-bottom:1px solid var(--line);flex-direction:column;padding:20px 24px;gap:16px;display:none;}
+    .nav-links{position:fixed;top:76px;left:0;right:0;background:#ffffff;border-bottom:1px solid #c3cfd6;flex-direction:column;padding:20px 24px;display:none;}
+    .nav-links li{margin-left:0;margin-top:16px;}
+    .nav-links li:first-child{margin-top:0;}
     .nav-links.open{display:flex;}
     .nav-toggle{display:block;}
     .hero-inner{grid-template-columns:1fr;text-align:center;padding:48px 0;}
     .hero-photo{margin:0 auto;}
     .btn-row,.socials{justify-content:center;}
-    .about-grid,.contact-grid,.skills-grid{grid-template-columns:1fr;}
+    .about-grid,.skills-grid{grid-template-columns:1fr;}
+    .photos-grid{grid-template-columns:repeat(2,1fr);}
     .edu-grid{grid-template-columns:1fr;}
     .stat-cards{grid-template-columns:1fr;}
     .hero h1{font-size:28px;}
@@ -193,7 +199,7 @@
 <nav class="navbar">
   <div class="container">
     <a href="#home" class="brand">
-      <span class="mono">K</span>
+      <img class="brand-logo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCABAAFADASIAAhEBAxEB/8QAGwABAAMAAwEAAAAAAAAAAAAAAwECBAAFBgf/xAAwEAACAQMCBQIEBQUAAAAAAAABAgMABBESIQUTMUFhUYEUIiMyM3GRocEGQmKx8P/EABgBAAMBAQAAAAAAAAAAAAAAAAECBAMA/8QAIhEAAgIBBAMAAwAAAAAAAAAAAAECEQMEEiExQVFhEyLw/9oADAMBAAIRAxEAPwD5vHWlOlZUNaYzWyMzQnSmXtQK21MXSJA0jhc9FG7Nvvgf90proUUYO1Qw23qIpjKv0bC8m8gAD+aiS4KfiWE6+BIpP6Uv5I3V8h2vsJ181nbrWjnQSvoEhjcnZZhpz79P3oplZDpdSp80bs4zsKFx5pnoXoBKoa0x5YhVBJPQCsiGmWd4Mumnp1xkr5Hmgca2lMJ5cLZlH3ydk8D1Pmktrnh9jFJdzxSXcqvp5KggE4zl39PA3NJHJBDZRXMPDWlt5H5aTSMBqbvt6bV2CRWfC4/i5oUku3i5r5BKQptjbufmX3PYZpZwc41dGK1MYO9t+jVLe8I4opXm85uUp5s2YoVB/sjj2GR3yfc10bT2XD7iWPPxKxuUiEceCUB779Mk4ya5LxnjFyGaKOOOHTqxKoOVzjtgdTVba0nmRpWjRS27EbAnB6foR+dRYNPj0zct/H33/eCuebJnjtlGn8IuuI8Mu3jjSCSIMuCHjOS2emxNHEOavJguBLHHnSmRlP5rRIeHWlw3Oufq28mCCMHUMEYHcHB/asUtqsN5b3JiZI5Jco7qV1D3/MVbhzxySpLj30VadY47cWSCfNXbvl+RJbaRELlTgdayNSTTTTzuzTNytXyoOmO1ExrWe2/1MtUsKyNYbr6EppQcigU0qmkJT1PAm4fc/wBKS28raCshR+Y+PmJyMfrQ3Jdl5N4hSYw8qTbaQDGJF9caVJHXr615iW2SU5Na7B5kdoppZJoCjaVJJZXx8pXznHtRvwQy07jJzT+m74wpNaw3Wt5VcsGhUsrbnSMAZ04O2OnptUTrfTATXt1Hw22B2JzrfcHIX7uu/brVbt2giGiUJKJFeFkO6nT9TH+Or+axxtKsUzHXLIysGlbLN9u29SrS44yui6OplLHZo+PtrJg1jbDmgYW4kBeRhk74Oy5GPPiiuJpbq2iuZWkeV3YHmSasAYxt0HXsKm1gW7X8V9Sx6mHL32G4ycDPiiaZGVIo45VWPVvKACST6D8qoSoRZHuVPlEdFwO1GxqSaoxojgg0imgDVcNQCODVWQs2pXZD6qcVUNU6q4BdE0ksWLMerMck0ouJ0wF5bAdmXH+sUGqp1UQNJ9iy3M0qlTFGoP3Ab5HoPSollWWYvHbpbpjCxoSQPc96ItUFqAFFLosTVGaoLVVmrhz/2Q==" alt="Kamrul Islam Logo">
       Kamrul Islam
     </a>
     <ul class="nav-links" id="navLinks">
@@ -203,6 +209,8 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#project">Project</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#get-in-touch">Get In Touch</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
@@ -216,12 +224,12 @@
     </div>
     <div>
       <div class="eyebrow">Information & Communication Technology</div>
-      <h1>Md. Kamrul Islam</h1>
-      <div class="role">IT Officer, Sonali Bank PLC</div>
-      <div class="org">Pakundia Branch, Kishoreganj, Dhaka Division, Bangladesh</div>
+      <h1 id="hero-name">Md. Kamrul Islam</h1>
+      <div class="role" id="hero-role">IT Officer, Sonali Bank PLC</div>
+      <div class="org" id="hero-org">Pakundia Branch, Kishoreganj, Dhaka Division, Bangladesh</div>
       <div class="btn-row">
         <a href="Md_Kamrul_Islam_CV.pdf" download class="btn btn-primary">Download CV</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <a href="#get-in-touch" class="btn btn-outline">Contact Me</a>
       </div>
       <div class="socials">
         <a href="https://www.facebook.com/kamrulict9" target="_blank" rel="noopener" aria-label="Facebook">
@@ -250,8 +258,8 @@
       <div class="about-text">
         <div class="section-eyebrow">Career Objective</div>
         <h2 style="font-size:26px;margin-bottom:16px;">About Me</h2>
-        <p>To seek an entry level position in the field of Information and Communication Technology sector where I will get the opportunity to apply my educational expertise along with personal skills in achieving challenging targets.</p>
-        <p>I'm an ICT engineering graduate from Comilla University, currently working as an IT Officer at Sonali Bank PLC. Before joining the bank, I worked as a Lecturer in ICT, which shaped how I explain and troubleshoot technical problems clearly.</p>
+        <p id="about-p1">To seek a position in the field of Information and Communication Technology sector where I will get the opportunity to apply my educational expertise along with personal skills in achieving challenging targets.</p>
+        <p id="about-p2">I'm an ICT engineering graduate from Comilla University, currently working as an IT Officer at Sonali Bank PLC. Before joining the bank, I worked as a Lecturer in ICT, which shaped how I explain and troubleshoot technical problems clearly.</p>
       </div>
       <div class="stat-cards">
         <div class="stat-card"><div class="num">4+</div><div class="lbl">Months Experience</div></div>
@@ -262,7 +270,7 @@
   </div>
 </section>
 
-<section id="education" style="background:var(--card);">
+<section id="education" style="background:#ffffff;">
   <div class="container">
     <div class="section-head">
       <div class="section-eyebrow">Academic Background</div>
@@ -334,7 +342,7 @@
   </div>
 </section>
 
-<section id="project" style="background:var(--card);">
+<section id="project" style="background:#ffffff;">
   <div class="container">
     <div class="section-head" style="text-align:center;">
       <div class="section-eyebrow" style="justify-content:center;">Academic Project</div>
@@ -383,62 +391,82 @@
   </div>
 </section>
 
-<section class="contact" id="contact">
+<section id="photos" style="background:#ffffff;">
+  <div class="container">
+    <div class="section-head" style="text-align:center;">
+      <div class="section-eyebrow" style="justify-content:center;">Gallery</div>
+      <h2>Photos</h2>
+    </div>
+    <div class="photos-grid" id="photosGrid">
+      <div class="photo-placeholder">Photo 1</div>
+      <div class="photo-placeholder">Photo 2</div>
+      <div class="photo-placeholder">Photo 3</div>
+    </div>
+    <!-- To add a photo: replace a .photo-placeholder div above with
+         <div class="photo-item"><img src="your-image.jpg" alt="..."></div>
+         Photos added here do NOT affect the downloadable CV. -->
+  </div>
+</section>
+
+<section class="contact" id="get-in-touch">
+  <div class="container">
+    <div class="section-head" style="text-align:center;">
+      <div class="section-eyebrow" style="justify-content:center;">Send a Message</div>
+      <h2>Get In Touch</h2>
+    </div>
+    <div class="contact-form-card">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+        <div id="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:#ffffff;">
   <div class="container">
     <div class="section-head">
-      <div class="section-eyebrow">Get In Touch</div>
+      <div class="section-eyebrow">Reach Me</div>
       <h2>Contact</h2>
     </div>
-    <div class="contact-grid">
-      <div>
-        <div class="contact-info-list">
-          <div class="contact-info-item">
-            <div class="icon">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5h20a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1.4 2 8.6 6.4L20.6 7H3.4ZM21 9.2l-8.4 6.3a1 1 0 0 1-1.2 0L3 9.2V17h18V9.2Z"/></svg>
-            </div>
-            <div><div class="lbl">Email</div><div class="val">Kamrulict98@gmail.com</div></div>
-          </div>
-          <div class="contact-info-item">
-            <div class="icon">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.6c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
-            </div>
-            <div><div class="lbl">Phone</div><div class="val">+880 1714-667398</div></div>
-          </div>
-          <div class="contact-info-item">
-            <div class="icon">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 7 11.5 7.3 11.7a1 1 0 0 0 1.4 0C13 21.5 20 15.5 20 10c0-4.4-3.6-8-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg>
-            </div>
-            <div><div class="lbl">Location</div><div class="val">Pakundia, Kishoreganj, Dhaka Division</div></div>
-          </div>
+    <div class="contact-info-list">
+      <div class="contact-info-item">
+        <div class="icon">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5h20a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1.4 2 8.6 6.4L20.6 7H3.4ZM21 9.2l-8.4 6.3a1 1 0 0 1-1.2 0L3 9.2V17h18V9.2Z"/></svg>
         </div>
-        <div class="map-card">
-          <div>
-            <div class="val">Sonali Bank PLC, Pakundia Branch</div>
-            <div class="lbl">Kishoreganj, Dhaka Division, Bangladesh</div>
-          </div>
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Sonali+Bank+PLC+Pakundia+Branch+Kishoreganj" target="_blank" rel="noopener">View larger map →</a>
-        </div>
+        <div><div class="lbl">Email</div><div class="val" id="val-email">Kamrulict98@gmail.com</div></div>
       </div>
-      <div>
-        <div class="contact-form-card">
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
-          <div id="form-status"></div>
-        </form>
+      <div class="contact-info-item">
+        <div class="icon">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.6c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
         </div>
+        <div><div class="lbl">Phone</div><div class="val" id="val-phone">+880 1714-667398</div></div>
       </div>
+      <div class="contact-info-item">
+        <div class="icon">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 7 11.5 7.3 11.7a1 1 0 0 0 1.4 0C13 21.5 20 15.5 20 10c0-4.4-3.6-8-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg>
+        </div>
+        <div><div class="lbl">Location</div><div class="val" id="val-location">Pakundia, Kishoreganj, Dhaka Division</div></div>
+      </div>
+    </div>
+    <div class="map-card">
+      <div>
+        <div class="val">Sonali Bank PLC, Pakundia Branch</div>
+        <div class="lbl">Kishoreganj, Dhaka Division, Bangladesh</div>
+      </div>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Sonali+Bank+PLC+Pakundia+Branch+Kishoreganj" target="_blank" rel="noopener">View larger map →</a>
     </div>
   </div>
 </section>
